@@ -1,0 +1,20 @@
+#color-palette {
+    display: inline-block;
+    height: 55px;
+    width: 223px;
+    padding-left: 3px;
+    padding-top: 3px;
+    background-color: gold;
+}
+.color {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+#pixel-board {
+    width: 210px;
+    height: 210px;
+    
+}
