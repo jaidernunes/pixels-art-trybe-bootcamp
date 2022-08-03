@@ -35,3 +35,24 @@ let pixel = document.getElementsByClassName('pixel');
 for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].addEventListener('click', applyColor);
 }
+// 9 - Crie um botão que retorne a cor do quadro para a cor inicial.
+// Sua página deve ter um botão que, ao ser clicado, deixe todos os pixels do quadro com a cor branca
+
+// O que será testado:
+
+// O botão deve possuir o ID clear-board;
+
+// O botão deve estar posicionado entre a paleta de cores e o quadro de pixels;
+
+// O botão deve possuir o texto Limpar;
+
+// O botão ao ser clicado, deve deixar todos os pixels do quadro preenchidos de branco.
+
+const clearButton = document.getElementById('clear-board');
+clearButton.addEventListener('click', clearBoard);
+function clearBoard () {
+    let pixel = document.getElementsByClassName('pixel');
+for (let i = 0; i < pixel.length; i += 1) {
+    pixel[i].style.backgroundColor = 'white';
+}
+}

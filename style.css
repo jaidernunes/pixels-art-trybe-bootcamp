@@ -27,3 +27,10 @@
     border: 1px solid black;
     background-color:  white;    
 }
+
+#clear-board {
+    text-align: center;
+    height: auto;
+    width: 55px;
+    background-color: gray;}
+#buttons {}
