@@ -14,11 +14,11 @@
 }
 
 #pixel-board {
-    width: 232px;
-    height: 232px;
+    width: 210px;
+    height: 210px;
     background-color: black;
-    padding-left: 6px;
-    padding-top: 6px;
+    padding: 4px;
+    line-height: 2px;
 }
 .pixel {
     width: 40px;
@@ -34,3 +34,11 @@
     width: 55px;
     background-color: gray;}
 #buttons {}
+
+#inputPixels {
+    display: inline-block;
+}
+#generate-board  {
+    display: inline-block;
+    background-color:  gray;
+}
