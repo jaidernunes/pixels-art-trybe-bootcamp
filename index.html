@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">    <title>Paleta de Cores</title>
+<link rel="stylesheet" href="style.css">    
+<title>Paleta de Cores</title>
 </head>
 <body>
-<h1 id="title">Paleta de Cores</h1>
-<div id="panel">    
-    <div id="color-palette">
-        <div class="color selected"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-    </div>
-    <div id="buttons">
+    <div id="content-center">
+        <h1 id="title">Paleta de Cores</h1>
+        <div id="panel">    
+            <div id="color-palette">
+                <div class="color selected"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div id="buttons">
+                <input type="number" min='1' placeholder="Insert Resolution Factor" id="board-size">
+                <button type="button" id="generate-board" onclick="getPixelsInput();">VQV</button>
+            </div>
+        </div>
+        <div id="board-container">
         <div id="clear-board">Limpar</div>        
-        <input type="number" min='1' placeholder="Insert Resolution Factor" id="board-size">
-        <button type="button" id="generate-board" onclick="getPixelsInput();">VQV</button>
+        <div id="pixel-board">
+        </div>
+        </div>
     </div>
-</div>
-<div id="pixel-board">
-</div>
+<footer>Developed by Jaider Nunes 
+    <a href="https://github.com/jaidernunes" target="_blank"><img src="github.svg" width="12px" height="12px" alt="github icon"></a> 
+    <a href="https://www.linkedin.com/in/jaidernunes/" target="_blank"><img src="linkedin.svg" width="12px" height="12px" alt="linkedin icon"></a>
+</footer>
 </body>
 <script src="script.js"></script>
 </html>

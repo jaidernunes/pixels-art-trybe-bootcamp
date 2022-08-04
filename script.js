@@ -1,4 +1,5 @@
 /* eslint-disable no-param-reassign */
+createPixels (5);
 function paintBox() {
   const colorArray = [
     ['lightblue', 'blue', 'darkblue'],
@@ -18,7 +19,7 @@ function paintBox() {
     ['gray','orange','yellow'],
     ['yellow','darkblue','brown'],
   ];
-  let randomIndex = (Math.floor(Math.random() * 15));
+    let randomIndex = (Math.floor(Math.random() * 15));
   const color = document.getElementsByClassName('color');
   color[0].style.backgroundColor = 'black';
   color[1].style.backgroundColor = colorArray[randomIndex][0];
@@ -95,27 +96,28 @@ function createPixels (number) {
         pixelBoard.style.width = (42 * number) + 'px';
         pixelBoard.style.height = (42 * number) + 'px';// [DUVIDA] PQ NAO FUNCIONA SE EU COLOCAR  WIDTH E HEIGHT FORA DO FOR?
     }
+    pixelAddListener()
 }
-createPixels (5);
 
-pixelAddListener()
+
+
 
 // const inputButton = document.getElementById('generate-board');
 // inputButton.addEventListener('click', getPixelsInput);
 function getPixelsInput () {
-    let pixelsInput = document.getElementById('board-size').value;
-    if (pixelsInput < 5) {
-        pixelsInput = 5;
+    let pixelsInput = document.getElementById('board-size');
+    if (pixelsInput.value < 5 && pixelsInput.value > 0) {
+        pixelsInput.value = 5;
     }
-    if (pixelsInput > 50) {
-        pixelsInput = 50;
+    if (pixelsInput.value > 50) {
+        pixelsInput.value = 50;
     }
-    if (pixelsInput.value !== true) {
+    if (pixelsInput.value.length == 0) {
         alert('Board inválido!');
+    } 
+    createPixels (pixelsInput.value); 
     }
-    createPixels (pixelsInput);
-    console.log(pixelsInput);
-}
+
 
 // 12 - Crie uma função para gerar as cores aleatoriamente, com exceção da cor preta, ao carregar a página.
 // function colorize() {
