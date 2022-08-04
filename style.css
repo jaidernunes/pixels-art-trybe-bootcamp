@@ -1,18 +1,20 @@
-#title { 
+#title {
     line-height: 10px;
     text-align: center;
 }
 
 #color-palette {
     display: inline-block;
-    height: 55px;    
+    height: 55px;
 }
+
 .color {
     border: 1px solid black;
     height: 50px;
     width: 50px;
     display: inline-block;
 }
+
 #panel {
     margin: auto;
     width: fit-content;
@@ -33,12 +35,13 @@
     padding: 4px;
     line-height: 2px;
 }
+
 .pixel {
     width: 40px;
     height: 40px;
     display: inline-block;
     border: 1px solid black;
-    background-color:  white;    
+    background-color: white;
 }
 
 #clear-board {
@@ -52,14 +55,17 @@
 #inputPixels {
     display: inline-block;
 }
-#generate-board  {
+
+#generate-board {
     display: inline-block;
-    background-color:  gray;
+    background-color: gray;
 }
+
 #board-size {
     width: 163px;
     background-color: lightgray;
 }
+
 #content-center {
     margin: auto;
     width: fit-content;
@@ -74,10 +80,12 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 #board-container {
     width: fit-content;
     margin: auto;
 }
+
 footer {
     border-top: 2px solid #069406;
     text-align: center;
