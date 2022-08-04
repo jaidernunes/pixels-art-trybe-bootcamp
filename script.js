@@ -1,16 +1,23 @@
 /* eslint-disable no-param-reassign */
 function paintBox() {
+  const colorArray = [
+    ['lightblue', 'blue', 'darkblue'],
+    ['lightgreen', 'green', 'darkgreen'],
+    ['pink', 'red', 'darkred']
+  ];
+  let randomIndex = (Math.floor(Math.random() * 3));
   const color = document.getElementsByClassName('color');
   color[0].style.backgroundColor = 'black';
-  color[1].style.backgroundColor = colorize();
-  color[2].style.backgroundColor = colorize();
-  color[3].style.backgroundColor = colorize();
+  color[1].style.backgroundColor = colorArray[randomIndex][0];
+  color[2].style.backgroundColor = colorArray[randomIndex][1];
+  color[3].style.backgroundColor = colorArray[randomIndex][2];
   color[0].addEventListener('click', clickPalette);
   color[1].addEventListener('click', clickPalette);
   color[2].addEventListener('click', clickPalette);
   color[3].addEventListener('click', clickPalette);
 }
 paintBox();
+// DEFINIR FOTOS DE PERSONAGENS PARA FAZER PIXEL ART COM 4 cores
 
 function clickPalette (event) {
     const color = document.getElementsByClassName('color');
@@ -98,11 +105,16 @@ function getPixelsInput () {
 }
 
 // 12 - Crie uma função para gerar as cores aleatoriamente, com exceção da cor preta, ao carregar a página.
-function colorize() {
+// function colorize() {
 
-    var
-     r = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
-     g = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
-     b = ('0'+(Math.random()*255|0).toString(16)).slice(-2);
-    return '#' +r+g+b;
-   } // Créditos dessa função random RGB: https://stackoverflow.com/questions/43333119/random-color-for-tr
+//     var
+//      r = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
+//      g = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
+//      b = ('0'+(Math.random()*255|0).toString(16)).slice(-2);
+//     return '#' +r+g+b;
+//    } // Créditos dessa função random RGB: https://stackoverflow.com/questions/43333119/random-color-for-tr
+
+
+
+
+
