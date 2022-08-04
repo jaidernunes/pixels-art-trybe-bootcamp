@@ -3,9 +3,22 @@ function paintBox() {
   const colorArray = [
     ['lightblue', 'blue', 'darkblue'],
     ['lightgreen', 'green', 'darkgreen'],
-    ['pink', 'red', 'darkred']
+    ['pink', 'red', 'darkred'],
+    ['red','blue','orange'],
+    ['yellow','blue','green'],
+    ['orange','yellow','red'],
+    ['green','orange','brown'],
+    ['purple','red','pink'],
+    ['green','orange','yellow'],
+    ['blue','darkblue','brown'],
+    ['red','blue','green'],
+    ['blue','yellow','red'],
+    ['pink','orange','brown'],
+    ['orange','red','pink'],
+    ['gray','orange','yellow'],
+    ['yellow','darkblue','brown'],
   ];
-  let randomIndex = (Math.floor(Math.random() * 3));
+  let randomIndex = (Math.floor(Math.random() * 15));
   const color = document.getElementsByClassName('color');
   color[0].style.backgroundColor = 'black';
   color[1].style.backgroundColor = colorArray[randomIndex][0];
@@ -97,7 +110,7 @@ function getPixelsInput () {
     if (pixelsInput > 50) {
         pixelsInput = 50;
     }
-    if (pixelsInput !== true) {
+    if (pixelsInput.value !== true) {
         alert('Board inválido!');
     }
     createPixels (pixelsInput);
