@@ -1,4 +1,5 @@
 /* eslint-disable no-param-reassign */
+
 createPixels(5);
 function paintBox() {
     const colorArray = [
@@ -96,6 +97,8 @@ function getPixelsInput() {
     }
     createPixels(pixelsInput.value);
 }
+
+// alert('Instructions:\nSelect a color and apply it to the squares below.\nInsert a number in the field and click the button to change the grid size.')
 
 // 12 - Crie uma função para gerar as cores aleatoriamente, com exceção da cor preta, ao carregar a página.
 // function colorize() {
